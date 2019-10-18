@@ -241,6 +241,10 @@
 
         @media (max-width: 767.98px) {
 
+            .inactive {
+                display: none;
+             }
+
             .carousel-control-prev,
             .carousel-control-next {
                 width: 2em;
@@ -273,9 +277,11 @@
             }
 
             .carousel-item.active {
+                display: block;
                 position: absolute;
                 left: 20%;
                 transform: translateX(-50%);
+            
 
             }
         }
@@ -365,7 +371,7 @@
     <div class="container mt-5 mb-5">
         <div id="carousel-example" class="carousel slide" data-ride="carousel" data-touch="true">
             <div class="row justify-content-center">
-                <div class="carousel-item">
+                <div class="carousel-item inactive">
                     <div class="card">
                         <div class="card-up" style="background: #7F5A83;">
                             <div class="avatar mx-auto">
@@ -382,7 +388,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item inactive active">
                     <div class="card">
                         <div class="card-up" style="background: #7F5A83;">
                             <div class="avatar mx-auto">
@@ -399,7 +405,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item inactive">
                     <div class="card">
                         <div class="card-up" style="background: #44CF6C;">
                             <div class="avatar mx-auto">
